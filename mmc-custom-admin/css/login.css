@@ -1,0 +1,37 @@
+body{
+	background-color: darkgray;
+}
+.login h1 a{
+	background-image: url(../images/logo.svg);
+}
+#wp-submit{
+	background-color:crimson;
+	text-shadow: none;
+	box-shadow: none;
+	border:none;
+	display: block;
+	width:100%;
+	font-size:1.2em;
+	height:auto;
+	padding:.5em;
+	margin-top:2em;
+	line-height: 1.3;
+	border-radius: 100px;
+}
+.login form{
+	background-color: lightgray;
+}
+
+.login #login_error, .login .message{
+	background-color: lightgreen;
+	border:none;
+}
+
+.login #login_error{
+	background-color: pink;
+}
+
+.register{
+	font-size:1.5em;
+	text-align: center;
+}

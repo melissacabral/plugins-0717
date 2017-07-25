@@ -1,0 +1,59 @@
+#announcement-bar{
+	background-color:tomato;
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:99999;
+	text-align: center;
+	color:white;
+	padding:.3em;
+	border-bottom:solid 3px white;
+	box-shadow: 0 3px 6px rgba(0,0,0,.3);
+}
+#announcement-bar p{
+	margin:0;
+	padding:0;
+}
+#announcement-bar a{
+	background-color: black;
+	border-radius: .25em;
+	display: inline-block;
+	padding:.1em 1em;
+	margin:0 .5em;
+	color:white;
+}
+
+.admin-bar #announcement-bar{
+	top:46px;
+}
+
+#announcement-bar .mmc-dismiss{
+	position: absolute;
+	top:.3em;
+	right:.3em;
+	display: inline-block;
+	border-radius:100px;
+	background-color: rgba(0,0,0,.3);
+	width:1.3em;
+	height:1.3em;
+	text-align: center;
+	font-weight: bold;
+	line-height: 1.3;
+	cursor:pointer;
+}
+
+/* band-aid to make it work with our fixed theme header */
+.header-bar{
+	margin-top:34px;
+}
+
+
+@media screen and (min-width:782px){
+	 #announcement-bar{
+	 	position: fixed;
+	 }
+	.admin-bar #announcement-bar{
+		top:32px;		
+	}	
+}
